@@ -1,5 +1,6 @@
 {{ define "main" }}
 <header class="page-heading"><p class="eyebrow">{{ .Section | default "Explore" }}</p><h1>{{ .Title }}</h1>{{ with .Description }}<p class="page-intro">{{ . }}</p>{{ end }}</header>
+{{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
 {{ if eq .Section "projects" }}<div class="project-grid listing-grid">{{ range .Paginator.Pages }}{{ partial "project-card.html" . }}{{ end }}</div>{{ else }}<div class="listing prose">{{ range .Paginator.Pages }}<article class="list-item"><p class="eyebrow">{{ .Date.Format "January 2006" }}</p><h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2><p>{{ .Summary }}</p></article>{{ end }}</div>{{ end }}
 {{ template "_internal/pagination.html" . }}
 {{ end }}

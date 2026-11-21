@@ -1,5 +1,10 @@
 # Lux Mundi
 
+[![Deploy with GitHub Pages](https://img.shields.io/badge/Deploy-GitHub%20Pages-222?logo=github)](https://github.com/poonchavez/lux-mundi/actions/workflows/hugo.yml)
+[![Deploy with GitLab Pages](https://img.shields.io/badge/Deploy-GitLab%20Pages-fc6d26?logo=gitlab&logoColor=white)](https://docs.gitlab.com/user/project/pages/)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fpoonchavez%2Flux-mundi)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/poonchavez/lux-mundi)
+
 Lux Mundi is a cinematic, responsive Hugo theme for independent filmmakers, production studios, and creative portfolios. It pairs an editorial type system and warm gold accents with a dark, film-inspired palette.
 
 ## Quick start
