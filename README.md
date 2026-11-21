@@ -25,6 +25,14 @@ theme = "lux-mundi"
     pageRef = "/about"
 ```
 
+To build the bundled example site from this theme repository, run:
+
+```sh
+hugo --source exampleSite --themesDir .. --theme .
+```
+
+When using the theme in another Hugo site, run `hugo` from that site's root instead.
+
 ## Adding a project
 
 Create a page under `content/projects/`, for example `hugo new content projects/my-film.md`. Add front matter such as:
