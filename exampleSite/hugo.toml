@@ -1,0 +1,29 @@
+baseURL = "https://example.org/"
+languageCode = "en-us"
+title = "Lux Mundi"
+theme = "lux-mundi"
+enableRobotsTXT = true
+
+[params]
+  description = "Independent films and stories made with intention."
+  eyebrow = "Independent film · Thoughtful storytelling"
+  headline = "Stories that stay with you."
+  intro = "Lux Mundi is an independent production studio creating films rooted in curiosity, craft, and the human experience."
+  footer = "Independent stories, made with intention."
+
+[menus]
+  [[menus.main]]
+    name = "Films"
+    pageRef = "/projects"
+    weight = 1
+  [[menus.main]]
+    name = "About"
+    pageRef = "/about"
+    weight = 2
+  [[menus.main]]
+    name = "Journal"
+    pageRef = "/journal"
+    weight = 3
+
+[pagination]
+  pagerSize = 9

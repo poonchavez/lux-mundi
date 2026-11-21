@@ -1,0 +1,11 @@
+name = "Lux Mundi"
+license = "MIT"
+licenselink = "https://opensource.org/licenses/MIT"
+description = "A cinematic Hugo theme for independent filmmakers and production studios."
+homepage = "https://github.com/"
+tags = ["film", "portfolio", "cinema", "dark", "responsive"]
+features = ["responsive", "project portfolio", "accessible navigation"]
+min_version = "0.120.0"
+
+[author]
+  name = "Lux Mundi"

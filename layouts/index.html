@@ -1,0 +1,17 @@
+{{ define "main" }}
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">{{ site.Params.eyebrow | default "Independent film · Thoughtful storytelling" }}</p>
+    <h1>{{ site.Params.headline | default "Stories that stay with you." }}</h1>
+    <p class="hero-intro">{{ site.Params.intro | default "Lux Mundi is an independent production studio creating films rooted in curiosity, craft, and the human experience." }}</p>
+    {{ with site.GetPage "about" }}<a class="text-link" href="{{ .RelPermalink }}">Discover our approach <span aria-hidden="true">↗</span></a>{{ end }}
+  </div>
+  <div class="hero-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="sun"></div><span class="hero-caption">LUX · MUNDI<br>LIGHT OF THE WORLD</span></div>
+</section>
+{{ $projects := where site.RegularPages "Section" "projects" }}
+{{ if $projects }}<section class="work-section">
+  <div class="section-heading"><div><p class="eyebrow">Selected work</p><h2>Films &amp; projects</h2></div>{{ with site.GetPage "projects" }}<a class="text-link" href="{{ .RelPermalink }}">View all <span aria-hidden="true">↗</span></a>{{ end }}</div>
+  <div class="project-grid">{{ range first 6 (sort $projects "Date" "desc") }}{{ partial "project-card.html" . }}{{ end }}</div>
+</section>{{ end }}
+{{ with .Content }}<section class="home-content prose">{{ . }}</section>{{ end }}
+{{ end }}
