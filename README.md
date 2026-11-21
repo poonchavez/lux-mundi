@@ -19,7 +19,7 @@ theme = "lux-mundi"
   description = "Independent films and stories made with intention."
   eyebrow = "Independent film · Thoughtful storytelling"
   headline = "Stories that stay with you."
-  intro = "An independent production studio creating films rooted in curiosity, craft, and the human experience."
+  intro = "Lux Mundi is a cinematic Hugo theme for independent filmmakers, production studios, and creative teams."
 
 [menus]
   [[menus.main]]
